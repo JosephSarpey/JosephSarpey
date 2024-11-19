@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GadgetZone</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #00d1ff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .search-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px;
+            width: 250px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-btn {
+            background-color: #00d1ff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .search-btn:hover {
+            background-color: #007bff;
+        }
+
+        .image-upload-btn {
+            display: inline-block;
+            margin-left: 15px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #00d1ff;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-upload-btn:hover {
+            background-color: #007bff;
+        }
+
+        .image-upload-btn i {
+            margin-right: 5px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 50px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .hero-section a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #00d1ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-section a:hover {
+            background-color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GadgetZone</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+                <!-- Search Bar and Image Upload -->
+                <li class="search-container">
+                    <!-- Search Form to redirect to search results -->
+                    <form action="/search" method="GET">
+                        <input type="text" name="query" class="search-input" placeholder="Search products..." required>
+                        <button type="submit" class="search-btn">Search</button>
+                    </form>
+
+                    <!-- Image Upload Button with Camera Icon -->
+                    <input type="file" id="image-upload" style="display: none;" />
+                    <button class="image-upload-btn" onclick="document.getElementById('image-upload').click();">
+                        <i class="fa fa-camera"></i> Submit Image to Search
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h2>Your One-Stop Shop for the Latest Gadgets</h2>
+        <p>Discover cutting-edge technology and innovative products all in one place.</p>
+        <a href="/products">Shop Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GadgetZone. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Add Font Awesome CDN for Camera Icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

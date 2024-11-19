@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadgetZone - Products</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0; /* Light gray background for contrast */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f2a900;
+    }
+    #products {
+      padding: 40px 0;
+      background-color: #ffffff; /* White background for the product section */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow to the section to separate it from the background */
+      border-radius: 15px;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .product-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .product-item {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .product-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-item h3 {
+      text-align: center;
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #333;
+    }
+    .product-item p {
+      text-align: center;
+      color: #666;
+      font-size: 16px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: block;
+      background-color: #333; /* Dark background color */
+      color: white; /* White text color */
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 0 20px 20px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #555; /* Lighter dark shade for hover effect */
+    }
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>GadgetZone</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="products">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 32px; color: #333;">Our Featured Products</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <img src="https://media.wired.com/photos/66c60e77081e8351da151f71/16:9/w_2000,h_1125,c_limit/Google%20Pixel%209%20Pro%20Abstract%20Background%20SOURCE%20Google.jpg" alt="Smartphone">
+          <h3>Smartphones</h3>
+          <p>Experience cutting-edge performance with a sleek design, perfect for your daily needs.</p>
+          <a href="/products/smartphone" class="btn">Buy Now</a>
+        </div>
+        <div class="product-item">
+          <img src="https://lh3.googleusercontent.com/7oixYeJA9phwXQLgcYTdfvkcBjLmM2MNCsDool0KOoO9dR8uY0_n180KxnCdOLPkofHmrk3N6RHlhpJ6XNx4PEI-jly8kVgAvQyO2c1fhhnC8F_63HD3Uecl0ZfSKNcdx7V9drXapbD5P6ON7h0FNgSHOF65qPh8" alt="Laptop">
+          <h3>Laptop</h3>
+          <p>Powerful and portable, built for productivity and entertainment on the go.</p>
+          <a href="/products/laptop" class="btn">Buy Now</a>
+        </div>
+        <div class="product-item">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/022/082/921/small/headphones-in-neon-jets-of-energy-illustration-generative-ai-photo.jpg" alt="Headphones">
+          <h3>Headphones</h3>
+          <p>Immerse yourself in superior sound quality with comfort for long listening sessions.</p>
+          <a href="/products/headphones" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 GadgetZone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
