@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @JosephSarpey
 - 👀 I’m interested in ...automation 
-- 🌱 I’m currently learning ...C++
+- 🌱 I’m currently learning ...html, css and javascript.
 - 💞️ I’m looking to collaborate on ...AI creation
 - 📫 How to reach me ...josephsarpey2002@gmail.com
 
