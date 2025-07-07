@@ -1,6 +1,8 @@
 - 👋 Hi, I’m @JosephSarpey
-- 👀 I’m interested in ...automation 
-- 🌱 I’m currently learning ...html, css and javascript.
+- Full STack dev at MEGAS TECH INC.
+- 👀 I’m interested in ...web and mobile app development 
+- 🌱 I’m currently fluent ...html, css, javascript ad typescipt.
+- I'm into MERN stack development
 - 💞️ I’m looking to collaborate on ...AI creation
 - 📫 How to reach me ...josephsarpey2002@gmail.com
 
