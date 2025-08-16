@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Djarias28
+- 👋 Hi, I’m @JosephSarpey
 - Full STack dev at MEGAS TECH INC.
 - 👀 I’m interested in ...web and mobile app development 
 - 🌱 I’m currently fluent ...html, css, javascript ad typescipt.
